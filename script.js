@@ -6,4 +6,4 @@ const options = {
     parentNode: document.querySelector('#meet')
 };
 const api = new JitsiMeetExternalAPI(domain, options);
-api.executeCommand('displayName', 'Akbar')
+api.executeCommand('displayName', 'PatientNameGoesHere')
