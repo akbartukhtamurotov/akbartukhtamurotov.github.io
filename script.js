@@ -7,3 +7,8 @@ const options = {
 };
 const api = new JitsiMeetExternalAPI(domain, options);
 api.executeCommand('displayName', 'PatientNameGoesHere')
+api.addEventListener('participantRoleChanged', function(event) {
+    if (event.role === "moderator") {
+        api.executeCommand('password', '123qwe');
+    }
+});
